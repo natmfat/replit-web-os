@@ -216,4 +216,13 @@ footer {
     .apps {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .modal {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .modal h1 {
+        font-size: 1.5rem;
+    }
 }
