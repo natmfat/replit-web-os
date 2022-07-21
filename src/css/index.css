@@ -68,12 +68,20 @@ body {
 }
 
 /* App Component */
-.apps .app {
+.app {
     width: 4rem;
     height: 4rem;
     border-radius: 0.75rem;
     background-color: rgba(255, 255, 255, 0.4);
     position: relative;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.app svg {
+    width: 2rem;
 }
 
 .app__title {
@@ -85,4 +93,52 @@ body {
     transform: translateX(-50%);
     font-size: 0.9rem;
     white-space: nowrap;
+}
+
+.app__notif {
+    font-size: 0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #92080b;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+/* Footer Component */
+footer {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: #ffffff80;
+    padding: 0.75rem;
+    width: fit-content;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.start__apps {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+.start__apps .app {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+
+.start__apps .app svg {
+    width: 1.5rem;
+}
+
+.start__apps .app__title {
+    display: none;
 }

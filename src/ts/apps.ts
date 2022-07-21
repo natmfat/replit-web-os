@@ -1,10 +1,25 @@
 import * as icons from "./icons";
 
-export const apps = [
+export interface App {
+    name: string;
+    icon?: string;
+    iconColor?: string;
+    bg?: string;
+    apps?: App[];
+}
+
+export type Apps = App[];
+
+export const apps: Apps = [
     {
         name: "Home",
         bg: "#ffffff",
         icon: icons.home,
+        iconColor: "#e49d3a",
+    },
+    {
+        name: "Languages",
+        apps: [],
     },
     {
         name: "Templates",
@@ -35,10 +50,6 @@ export const apps = [
         name: "Curriculum",
         bg: "#da7f37",
         icon: icons.book,
-    },
-    {
-        name: "Languages",
-        apps: [{}],
     },
     {
         name: "Settings",
