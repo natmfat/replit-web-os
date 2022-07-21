@@ -14,7 +14,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-/* Command component */
+/* Command Component */
 .command {
     border-radius: 0.5rem;
     border: 1px solid #8da1b8;
@@ -55,13 +55,34 @@ body {
     white-space: pre;
 }
 
-/* <div class="command">
-<input
-    class="command__input"
-    placeholder="Search & command"
-/>
-<div class="command__bindings">
-    <span>Ctrl</span>
-    <span>.</span>
-</div>
-</div> */
+/* Apps Wrapper */
+.apps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem 3rem;
+    max-width: 52rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    user-select: none;
+}
+
+/* App Component */
+.apps .app {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.app__title {
+    color: #fff;
+    text-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.5rem);
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
