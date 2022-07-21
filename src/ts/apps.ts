@@ -19,7 +19,23 @@ export const apps: Apps = [
     },
     {
         name: "Languages",
-        apps: [],
+        apps: [
+            {
+                name: "Python",
+                icon: icons.devicon.python,
+                bg: "#1a252e",
+            },
+            {
+                name: "HTML5",
+                icon: icons.devicon.html5,
+                bg: "#1a252e",
+            },
+            {
+                name: "JavaScript",
+                icon: icons.devicon.javascript,
+                bg: "#1a252e",
+            },
+        ],
     },
     {
         name: "Templates",
