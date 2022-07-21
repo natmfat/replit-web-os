@@ -60,7 +60,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 4rem 3rem;
-    max-width: 52rem;
+    width: fit-content;
     padding: 0 2rem;
     margin: 0 auto;
     margin-top: 4rem;
@@ -95,11 +95,13 @@ body {
     white-space: nowrap;
 }
 
+/* App Notifications */
 .app__notif {
     font-size: 0.9rem;
     width: 1.5rem;
     height: 1.5rem;
     background-color: #92080b;
+    color: #fff !important;
     display: grid;
     place-items: center;
     border-radius: 100%;
@@ -141,4 +143,15 @@ footer {
 
 .start__apps .app__title {
     display: none;
+}
+
+/* Reponsive Design */
+@media (max-width: 768px) {
+    .command {
+        max-width: 20rem;
+    }
+
+    .apps {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
