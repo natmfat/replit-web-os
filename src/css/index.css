@@ -218,11 +218,11 @@ footer {
     }
 
     .modal {
-        width: 90vmin;
-        height: 90vmin;
+        width: 80vmin;
+        height: 80vmin;
     }
 
     .modal h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 }
