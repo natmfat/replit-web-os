@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+/* Wallpaper */
+body {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url(/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1rem) brightness(0.8);
+
+    font-family: "Inter", sans-serif;
+}
+
+/* Command component */
+.command {
+    border-radius: 0.5rem;
+    border: 1px solid #8da1b8;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#73829c, #798ba5);
+    padding: 0.75rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.command__input {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.command__input input {
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.command__input input::placeholder {
+    color: #fff;
+}
+
+.command__bindings span {
+    border: 1px solid rgb(140, 154, 170);
+    border-radius: 0.2rem;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    color: #fff;
+    white-space: pre;
+}
+
+/* <div class="command">
+<input
+    class="command__input"
+    placeholder="Search & command"
+/>
+<div class="command__bindings">
+    <span>Ctrl</span>
+    <span>.</span>
+</div>
+</div> */
