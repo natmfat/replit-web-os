@@ -1,10 +1,7 @@
 import * as icons from "@/ts/icons";
-import { apps, Apps } from "@/ts/apps";
-import { choiceApps } from "@/ts/utils";
+import { Apps } from "@/ts/apps";
 
-import { commands, Command, Commands } from "@/ts/commands";
-
-import gsap, { Expo, Elastic } from "gsap";
+import gsap, { Elastic } from "gsap";
 import { sharedAnimation } from "@/ts/utils";
 
 // render modal
