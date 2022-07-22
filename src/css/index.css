@@ -93,6 +93,7 @@ body {
     transform: translateX(-50%);
     font-size: 0.9rem;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 /* App Notifications */
@@ -160,6 +161,7 @@ footer {
     width: 1rem;
     border-radius: 0.25rem;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .apps-folder svg {

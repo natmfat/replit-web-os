@@ -68,9 +68,15 @@ const renderApps = (apps: Apps, appsContainer: HTMLElement) => {
         const app = { ..._app };
 
         // create app
-        const appElement = document.createElement("div");
+        const appElement = document.createElement("a");
         appElement.className = "app";
         appElement.title = app.name;
+
+        if (app.href) {
+            appElement.href = `https://replit.com${app.href}`;
+            appElement.target = "_blank";
+            appElement.rel = "noopener noreferrer";
+        }
 
         // create app name
         const appTitle = document.createElement("span");
