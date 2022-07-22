@@ -1,4 +1,5 @@
 import { Apps } from "./apps";
+import { Expo } from "gsap";
 
 // select random start apps
 export const choiceApps = (apps: Apps, count: number): Apps => {
@@ -15,4 +16,9 @@ export const choiceApps = (apps: Apps, count: number): Apps => {
     }
 
     return randomApps;
+};
+
+export const sharedAnimation = {
+    duration: 1,
+    ease: Expo.easeInOut,
 };

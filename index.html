@@ -13,7 +13,7 @@
     <body>
         <div id="app">
             <header>
-                <div class="command">
+                <div class="command" tabindex="1">
                     <div class="command__input">
                         <svg
                             preserveAspectRatio="xMidYMin"
@@ -34,11 +34,22 @@
                                 d="M7 17C5.89543 17 5 17.8954 5 19V21C5 22.1046 5.89543 23 7 23H9C10.1046 23 11 22.1046 11 21V19C11 17.8954 10.1046 17 9 17H7Z"
                             ></path>
                         </svg>
+                        <div class="command__history">
+                            <!-- <div class="command__block">bookmarks</div>
+                            <div class="command__block">bookmarks</div> -->
+                        </div>
                         <input placeholder="Search & command" />
                     </div>
                     <div class="command__bindings">
                         <span>Ctrl</span>
-                        <span> . </span>
+                        <span> K </span>
+                    </div>
+
+                    <div class="command__auto" style="display: none">
+                        <!-- <div class="command__auto__cell">
+                            <div class="command__block">bookmarks</div>
+                            <span>Open a saved collection of bookmarks</span>
+                        </div> -->
                     </div>
                 </div>
             </header>
