@@ -9,7 +9,6 @@ body {
         url(/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     backdrop-filter: blur(1rem) brightness(0.8);
 
     font-family: "Inter", sans-serif;
