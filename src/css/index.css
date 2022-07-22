@@ -233,6 +233,13 @@ footer {
     transition: background 100ms ease-in-out;
 }
 
+.command__auto__cell span {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
 .command__auto__cell:hover {
     background: #8da1b8;
 }
