@@ -2,287 +2,286 @@
 
 /* Wallpaper */
 body {
-    background-image: linear-gradient(
-            rgba(255, 255, 255, 0.4),
-            rgba(255, 255, 255, 0.4)
-        ),
-        url(/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(1rem) brightness(0.8);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url(/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1rem) brightness(0.8);
 
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Command Component */
 .command {
-    border-radius: 0.5rem;
-    border: 1px solid #8da1b8;
-    display: flex;
-    align-items: center;
-    background: #73829c;
-    padding: 0.75rem;
-    max-width: 32rem;
-    margin: 0 auto;
-    margin-top: 2rem;
-    justify-content: space-between;
-    position: relative;
-    z-index: 30;
+  border-radius: 0.5rem;
+  border: 1px solid #8da1b8;
+  display: flex;
+  align-items: center;
+  background: #73829c;
+  padding: 0.75rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 30;
 }
 
 .command__input {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .command__input input {
-    font-size: 1rem;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    margin-left: 0.25rem;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 0.25rem;
 }
 
 .command__input input::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 .command__bindings span {
-    border: 1px solid rgb(140, 154, 170);
-    border-radius: 0.2rem;
-    padding: 0.25rem;
-    font-size: 0.75rem;
-    color: #fff;
-    white-space: pre;
+  border: 1px solid rgb(140, 154, 170);
+  border-radius: 0.2rem;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  color: #fff;
+  white-space: pre;
 }
 
 /* Apps Wrapper */
 .apps {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 4rem 3rem;
-    width: fit-content;
-    padding: 0 2rem;
-    margin: 0 auto;
-    margin-top: 4rem;
-    user-select: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem 3rem;
+  width: fit-content;
+  padding: 0 2rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  user-select: none;
 }
 
 /* App Component */
 .app {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.4);
-    position: relative;
-    display: grid;
-    place-items: center;
-    color: #fff;
-    cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  cursor: pointer;
 }
 
 .app svg {
-    width: 2rem;
+  width: 2rem;
 }
 
 .app__title {
-    color: #fff;
-    text-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 50%;
-    top: calc(100% + 0.5rem);
-    transform: translateX(-50%);
-    font-size: 0.9rem;
-    white-space: nowrap;
-    text-decoration: none;
+  color: #fff;
+  text-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.5rem);
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 /* App Notifications */
 .app__notif {
-    font-size: 0.9rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #92080b;
-    color: #fff !important;
-    display: grid;
-    place-items: center;
-    border-radius: 100%;
-    position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
+  font-size: 0.9rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #92080b;
+  color: #fff !important;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
 }
 
 /* Footer Component */
 footer {
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    background: #ffffff80;
-    padding: 0.75rem;
-    width: fit-content;
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  background: #ffffff80;
+  padding: 0.75rem;
+  width: fit-content;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .start__apps {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.75rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
 }
 
 /* App Component (variation footer) */
 .start__apps .app {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.5rem;
 }
 
 .start__apps .app svg {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 .start__apps .app__title {
-    display: none;
+  display: none;
 }
 
 /* App Component (variation folder) */
 .apps-folder {
-    display: grid;
-    place-content: start;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 6px;
-    gap: 2px;
+  display: grid;
+  place-content: start;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 6px;
+  gap: 2px;
 }
 
 .apps-folder .app {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 0.25rem;
-    overflow: hidden;
-    pointer-events: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .apps-folder svg {
-    width: 0.5rem;
+  width: 0.5rem;
 }
 
 /* Folder Modal Component */
 .modal-wrapper {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  text-align: center;
 
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .modal {
-    height: 50vmin;
-    width: 50vmin;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5vmin;
-    padding: 0 2rem;
+  height: 50vmin;
+  width: 50vmin;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5vmin;
+  padding: 0 2rem;
 }
 
 .modal h1 {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: 400;
-    text-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .modal__apps {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* CLUI Component */
 .command__auto {
-    position: absolute;
-    top: 100%;
-    left: -1px;
-    width: calc(100% + 2px);
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border: 1px solid #8da1b8;
-    border-top: none;
-    background: #73829c;
-    z-index: 30;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: calc(100% + 2px);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 1px solid #8da1b8;
+  border-top: none;
+  background: #73829c;
+  z-index: 30;
 }
 
 .command__auto__cell {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem;
-    gap: 0.5rem;
-    color: #fff;
-    user-select: none;
-    cursor: pointer;
-    transition: background 100ms ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  gap: 0.5rem;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+  transition: background 100ms ease-in-out;
 }
 
 .command__auto__cell span {
-    white-space: nowrap;
-    max-width: 100%;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .command__auto__cell:hover {
-    background: #8da1b8;
+  background: #8da1b8;
 }
 
 .command__block {
-    font-size: 0.9rem;
-    padding: 0.25rem;
-    border-radius: 0.25rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    align-items: center;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .command__history {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: 1.594rem;
 }
 
 .command__history .command__block {
-    margin-left: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 /* Reponsive Design */
 @media (max-width: 768px) {
-    .command {
-        max-width: 18rem;
-    }
+  .command {
+    max-width: 18rem;
+  }
 
-    .command__bindings {
-        display: none;
-    }
+  .command__bindings {
+    display: none;
+  }
 
-    .apps {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .apps {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .modal {
-        width: 80vmin;
-        height: 80vmin;
-    }
+  .modal {
+    width: 80vmin;
+    height: 80vmin;
+  }
 
-    .modal h1 {
-        font-size: 1.75rem;
-    }
+  .modal h1 {
+    font-size: 1.75rem;
+  }
 }
