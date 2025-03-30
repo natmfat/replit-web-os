@@ -1,5 +1,6 @@
 {
   "name": "replit-os-template",
+  "type": "module",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,7 +10,7 @@
   },
   "devDependencies": {
     "typescript": "^4.5.4",
-    "vite": "^2.9.9"
+    "vite": "^6.2.3"
   },
   "dependencies": {
     "gsap": "^3.10.4"
